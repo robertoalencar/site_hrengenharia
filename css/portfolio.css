@@ -1,0 +1,61 @@
+.filtros{
+    margin: 5rem 0 0 0;
+}
+
+.portfolio__gallery{
+    padding: 0 0;
+    grid-template-columns: repeat(4, 23vw);
+}
+
+.portfolio__item__img{
+    height: 23vw;
+}
+
+.portfolio__item:hover .portfolio__item__img,
+.portfolio__item:focus-within .portfolio__item__img,
+.portfolio__item:active .portfolio__item__img,
+.portfolio__item:focus .portfolio__item__img{
+    height: 18vw;
+}
+
+.portfolio__item:hover .portfolio__item__text,
+.portfolio__item:focus-within .portfolio__item__text,
+.portfolio__item:active .portfolio__item__text,
+.portfolio__item:focus .portfolio__item__text{
+    height: 5vw;
+}
+
+@media only screen and (max-width: 1450px) {
+    .portfolio__gallery{
+        padding: 0 0;
+        grid-template-columns: repeat(auto-fit, 30rem);
+    }
+    
+    .portfolio__item__img{
+        height: 30rem;
+    }
+    
+    .portfolio__item:hover .portfolio__item__img,
+    .portfolio__item:focus-within .portfolio__item__img,
+    .portfolio__item:active .portfolio__item__img,
+    .portfolio__item:focus .portfolio__item__img{
+        height: 20rem;
+    }
+    
+    .portfolio__item:hover .portfolio__item__text,
+    .portfolio__item:focus-within .portfolio__item__text,
+    .portfolio__item:active .portfolio__item__text,
+    .portfolio__item:focus .portfolio__item__text{
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .portfolio__item__img{
+        height: 20rem;
+    }
+
+    .portfolio__item__text{
+        height: 10rem;
+    }
+}

@@ -1,0 +1,138 @@
+/* BANNER */
+.main-content-grid{
+    min-height: 100vh;
+    grid-template-rows: 30rem;
+}
+
+.main-grid{
+    min-height: 100vh;
+    grid-template-rows: auto auto auto;
+}
+
+.hero{
+    background: url(../img/construcao-civil2-darker.png);
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1{
+    padding-top: 5rem;
+}
+
+.heading-1{
+    font-weight: 700;
+    font-size: 5.5rem;
+    transform: translateY(5rem);
+}
+
+.heading-3{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+/* OBRA */
+
+.obra{
+    padding: 10rem 0 15rem;
+}
+
+    /* GALERIA */
+
+    .splide__slide img{
+        width: 100%;
+        object-fit: cover;
+        height: 50rem;
+    }
+
+    .splide__arrow{
+        width: 5rem;
+        height: 6rem;
+        border-radius: 0;
+        opacity: .8;
+        background: var(--color-grey-light-3);
+    }
+
+    .splide__arrow:hover{
+        opacity: 1;
+    }
+
+    .splide__arrow:hover svg{
+        fill: var(--color-primary-blue);
+    }
+
+    .splide__arrow--prev{
+        left: .5rem;
+    }
+
+    .splide__arrow--next{
+        right: 0.5rem;
+    }
+
+
+.obra__about{
+    padding-top: 4rem;
+}
+
+.obra__about__group-1{
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.obra__about__item{
+    background-color: var(--color-grey-light-3);
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.obra__about__item:last-child{
+    border-bottom: 3px solid var(--color-primary-blue)
+}
+
+.obra__about__item p {
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+.obra__about__group-2{
+    grid-column: 4 / -1;
+    padding-left: 3rem;
+}
+
+.obra__about__group-2 p{
+    font-size: 1.6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px){
+
+    .obra__about__group-1{
+        grid-column: 1 / -1;
+        padding-bottom: 4rem;
+    }
+
+    .obra__about__item{
+        justify-content: center;
+        border: none;
+        margin: .5rem 0;
+    }
+
+    .obra__about__item:last-child{
+        border: none;
+    }
+
+    .obra__about__group-2{
+        grid-column: 1 / -1;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .underline-left::after{
+        margin-left: auto;
+        width: 20rem;
+    }
+}
